@@ -4,8 +4,11 @@ class MyUserEntity {
   String name;
   bool hasActiveCart;
 
-  MyUserEntity(
-      {required this.userId, required this.email, required this.name, required this.hasActiveCart});
+  MyUserEntity({required this.userId,
+    required this.email,
+    required this.name,
+    required this.hasActiveCart
+  });
 
   Map<String, Object?> toDocument(){
     return {
